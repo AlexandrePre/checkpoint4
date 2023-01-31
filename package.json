@@ -17,5 +17,11 @@
   "devDependencies": {
     "concurrently": "^7.0.0",
     "husky": "^7.0.0"
+  },
+  "dependencies": {
+    "i": "^0.3.7",
+    "npm": "^9.4.0",
+    "react": "^18.2.0",
+    "react-router-dom": "^6.8.0"
   }
 }
