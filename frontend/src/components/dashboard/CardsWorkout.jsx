@@ -18,7 +18,7 @@ function CardsWorkout() {
 
   useEffect(() => {
     getAllWorkout();
-  }, []);
+  }, [allWorkout]);
 
   const cardMap = allWorkout.map((cardItem) => (
     <CardsItem nbdec={cardItem.id} name_workout={cardItem.name_workout} />

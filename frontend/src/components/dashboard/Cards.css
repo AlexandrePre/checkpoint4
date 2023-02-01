@@ -9,12 +9,35 @@
   flex-wrap: wrap;
 }
 
+#titleWorkout h4 {
+  text-decoration: none;
+  width: 15vw;
+  margin-left: 2vw;
+}
+
+#workoutTitle {
+  text-decoration: none;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .CardItem {
   background-color: white;
   width: 20vw;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   box-shadow: -7px 5px 8px rgba(0, 0, 0, 0.25);
   border-radius: 34px;
+}
+
+.btn-delete { 
+  width: 5vw;
+}
+
+#delete{
+  width: 3vw;
+  margin-top: 1vh;
 }
