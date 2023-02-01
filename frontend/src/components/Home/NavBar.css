@@ -10,15 +10,20 @@
   height: 50%;
 }
 
-#logoHomeNav {
-  width: 8vw;
+#navbarHome {
+  background-color: black;
+}
+
+#logoNav {
+  width: 10vw;
 }
 
 .liste {
   list-style-type: none;
   background-color: black;
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr 4fr repeat(3, 1fr);
+  grid-template-columns: 3fr repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -26,10 +31,9 @@
   position: relative;
   margin: 0;
   padding: 0;
-  width: 100vw;
 }
 
-.itemtitre {
+.items {
   margin-right: 10px;
   color: white;
   cursor: pointer;
@@ -43,22 +47,25 @@
 @media screen and (max-width: 500px) {
   .liste {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    height: 200px;
+    justify-content: center;
+    align-items: center;
+    height: 33vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: -12vh;
   }
 
   .items:nth-child(1) {
-    border-top: 1px solid white;
     margin-top: 50px;
   }
 
   .items {
-    height: 50px;
+    height: 2vh;
+    width: 10vw;
+    font-size: x-small;
     width: 100%;
-    border-bottom: 1px solid white;
-    line-height: 50px;
   }
 
   .btn-nav {
@@ -68,7 +75,6 @@
     top: 10px;
     color: #333;
     cursor: pointer;
-
     border: none;
   }
 
@@ -76,8 +82,9 @@
     width: 5vw;
   }
 
-  nav {
+  #navbarHome {
     height: 5vh;
+    background-color: black;
     margin: 0;
     padding: 0;
   }

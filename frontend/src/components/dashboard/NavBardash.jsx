@@ -33,21 +33,19 @@ function NavBar() {
             <img id="logodash" src={logo} alt="logo" />
           </Link>
 
-          <div className="decision">
-            <Link to="/decisiondash" className="decision">
-              <img id="decision" src={logoDrills} alt="decision" />
-              <h4>Drills</h4>
-            </Link>
+          <div className="drill">
+            <img id="drill" src={logoDrills} alt="drill" />
+            <h4>Drills</h4>
           </div>
 
-          <div className="message">
+          <div className="workout">
             <img
-              id="messageLogo"
+              id="workoutlogo"
               src={logoWorkout}
-              alt="message"
+              alt="workout"
               role="presentation"
             />
-            <h4>Séances</h4>
+            <h4>Workout</h4>
             <img
               src={triangle}
               alt=""

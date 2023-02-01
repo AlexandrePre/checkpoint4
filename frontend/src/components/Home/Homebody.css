@@ -84,7 +84,7 @@ img {
 
 @media screen and (max-width: 500px) {
   .body {
-    height: 57vh;
+    height: 50vh;
   }
 
   .body h2 {
@@ -111,7 +111,13 @@ img {
   .footer {
     margin-top: 0;
     column-gap: 20px;
-    height: 20vh;
+    height: 10vh;
+  }
+
+  .logoreseau {
+    position: absolute;
+    top: 90vh;
+    left: 38vw;
   }
 
   .logoreseau img {
@@ -120,8 +126,10 @@ img {
     padding-bottom: 10px;
   }
 
-  .logoimg {
-    padding-top: 10px;
-    margin-left: 10px;
+  .logoimg img {
+    /* padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 10px; */
+    width: 20vw;
   }
 }

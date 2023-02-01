@@ -86,7 +86,7 @@ export default function FormInscription() {
   };
 
   return (
-    <form className="form" onSubmit={handleSubmitConnexion}>
+    <form className="formInscription" onSubmit={handleSubmitConnexion}>
       <h2>Créer un compte gratuit</h2>
       <div id="lastname">
         <input

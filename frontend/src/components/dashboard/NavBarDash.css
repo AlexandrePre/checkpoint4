@@ -106,7 +106,7 @@ h4 {
   width: 10vw;
 }
 
-.decision {
+.drill {
   grid-area: 1 / 3 / 2 / 4;
   width: 100%;
   cursor: pointer;
@@ -119,16 +119,16 @@ h4 {
   margin-bottom: 1.7vh;
 }
 
-.decision h4 {
+.drill h4 {
   margin-top: 1px;
 }
 
-#decision {
+#drill {
   margin-top: 10%;
   width: 30%;
 }
 
-.notification {
+.workout {
   position: relative;
   grid-area: 1 / 5 / 2 / 6;
   width: 90%;
@@ -143,11 +143,11 @@ h4 {
   margin-bottom: 3vh;
 }
 
-.notification h4 {
+.workout h4 {
   margin-top: 1px;
 }
 
-#notification {
+#workout {
   margin-top: 10%;
   width: 30%;
 }
@@ -182,29 +182,6 @@ h4 {
   padding-left: 7vmin;
 }
 
-.admin {
-  grid-area: 1 / 2 / 2 / 3;
-  width: 90%;
-  margin-top: 0;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 0;
-  font-size: xx-small;
-  margin-bottom: 3vh;
-}
-
-.admin h4 {
-  margin-top: 0.2px;
-}
-
-#adminImg {
-  margin-top: 10%;
-  width: 30%;
-}
-
 #triangle {
   height: 1vh;
   width: 1vh;
@@ -236,4 +213,55 @@ h4 {
 .iconImg {
   width: 30%;
   height: 30%;
+}
+
+@media screen and (max-width: 500px) {
+  .items {
+    height: 10px;
+    width: 100%;
+    line-height: 50px;
+  }
+
+  .btn-nav {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #333;
+    cursor: pointer;
+    background-color: black;
+    border: none;
+  }
+
+  .burger {
+    width: 5vw;
+  }
+
+  .listeNav {
+    list-style-type: none;
+    height: 120%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+
+  #logodash {
+    width: 25vw;
+  }
+
+  #triangle {
+    height: 1vh;
+    width: 1vh;
+    position: relative;
+    top: -2vh;
+    left: 30vw;
+  }
 }
