@@ -7,6 +7,7 @@ import Inscription from "./pages/Inscription";
 import Connexionpage from "./pages/Connexionpage";
 import Dashboard from "./pages/dashboard";
 import WorkoutCreate from "./pages/WorkoutCreate";
+import DetailWorkout from "./pages/DetailWorkout";
 
 function Transition() {
   return (
@@ -18,6 +19,10 @@ function Transition() {
         <Route path="/connexion" element={<Connexionpage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/workoutcreate" element={<WorkoutCreate />} />
+        <Route
+          path="/dashboard/detailworkout/:id"
+          element={<DetailWorkout />}
+        />
       </Routes>
     </div>
   );

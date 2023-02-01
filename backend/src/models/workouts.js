@@ -7,6 +7,13 @@ const findAll = (id) => {
     .then(([res]) => res);
 };
 
+const findOne = (id) => {
+  return database
+    .promise()
+    .query("SELECT * FROM workout where workout.id = ?", [id])
+    .then(([res]) => res);
+};
+
 const deleteOne = (id) => {
   return database
     .promise()
@@ -25,4 +32,5 @@ module.exports = {
   findAll,
   deleteOne,
   createOne,
+  findOne,
 };

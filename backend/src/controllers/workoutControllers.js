@@ -13,6 +13,17 @@ const workoutController = {
       });
   },
 
+  getOneWorkout: (req, res) => {
+    const { id } = req.params;
+    workoutModel
+      .findOne(id)
+      .then((decision) => res.send(decision))
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  },
+
   deleteWorkout: (req, res) => {
     const { id } = req.params;
     workoutModel

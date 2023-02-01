@@ -12,7 +12,7 @@ function CardsItem({ nbdec, name_workout }) {
   };
   return (
     <div className="CardItem">
-      <Link id="workoutTitle" to={`/dashboard/decision/${nbdec}`}>
+      <Link id="workoutTitle" to={`/dashboard/detailworkout/${nbdec}`}>
         <div style={{ textDecoration: "none" }}>
           <h4 id="titleWorkout" style={{ textDecoration: "none" }}>
             {name_workout}
