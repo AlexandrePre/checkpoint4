@@ -14,7 +14,15 @@ const deleteOne = (id) => {
     .then(([res]) => res);
 };
 
+const createOne = (payload) => {
+  return database
+    .promise()
+    .query("INSERT INTO workout SET ?", [payload])
+    .then(([res]) => res);
+};
+
 module.exports = {
   findAll,
   deleteOne,
+  createOne,
 };

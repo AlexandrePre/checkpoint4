@@ -21,7 +21,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .CardItem {
@@ -33,11 +32,11 @@
   border-radius: 34px;
 }
 
-.btn-delete { 
+.btn-delete {
   width: 5vw;
 }
 
-#delete{
+#delete {
   width: 3vw;
   margin-top: 1vh;
 }

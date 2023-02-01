@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const workoutModel = require("../models/workouts");
 
 const workoutController = {
@@ -27,68 +28,44 @@ const workoutController = {
         res.sendStatus(500);
       });
   },
-  // getOneDecision: (req, res) => {
-  //   const { id } = req.params;
-  //   decisionModel
-  //     .findOne(id)
-  //     .then((decision) => {
-  //       if (decision.length === 0) {
-  //         res.sendStatus(404);
-  //       } else {
-  //         res.send(decision[0]);
-  //       }
-  //     })
-  //     .catch((err) => {
-  //       console.error(err);
-  //       res.sendStatus(500);
-  //     });
-  // },
-  // postDecision: (req, res) => {
-  //   const {
-  //     title,
-  //     content,
-  //     deadline,
-  //     contexte,
-  //     profit,
-  //     usefullness,
-  //     inconvenience,
-  //     id_user,
-  //     date_posted,
-  //     id_status,
-  //   } = req.body;
-  //   decisionModel
-  //     .createOne({
-  //       title,
-  //       content,
-  //       deadline,
-  //       contexte,
-  //       profit,
-  //       usefullness,
-  //       inconvenience,
-  //       id_user,
-  //       date_posted,
-  //       id_status,
-  //     })
-  //     .then((result) =>
-  //       res.status(201).send({
-  //         id: result.insertId,
-  //         title,
-  //         content,
-  //         deadline,
-  //         contexte,
-  //         profit,
-  //         usefullness,
-  //         inconvenience,
-  //         id_user,
-  //         date_posted,
-  //         id_status,
-  //       })
-  //     )
-  //     .catch((err) => {
-  //       console.error(err);
-  //       res.sendStatus(500);
-  //     });
-  // },
+
+  postDecision: (req, res) => {
+    const {
+      name_workout,
+      drillOne,
+      drillTwo,
+      drillThree,
+      drillFour,
+      drillFive,
+      user_id,
+    } = req.body;
+    workoutModel
+      .createOne({
+        name_workout,
+        drillOne,
+        drillTwo,
+        drillThree,
+        drillFour,
+        drillFive,
+        user_id,
+      })
+      .then((result) =>
+        res.status(201).send({
+          id: result.insertId,
+          name_workout,
+          drillOne,
+          drillTwo,
+          drillThree,
+          drillFour,
+          drillFive,
+          user_id,
+        })
+      )
+      .catch((err) => {
+        console.error(err);
+        res.sendStatus(500);
+      });
+  },
 
   // updateDecision: async (req, res) => {
   //   const { id } = req.params;

@@ -1,12 +1,12 @@
 import Workouts from "../components/dashboard/Workouts";
-import ButtonCreateDecision from "../components/dashboard/ButtonCreateDecision";
+import ButtonCreateWorkout from "../components/dashboard/ButtonCreateWorkout";
 import NavBarDash from "../components/dashboard/NavBardash";
 
 export default function Dashboard() {
   return (
     <div>
       <NavBarDash />
-      <ButtonCreateDecision />
+      <ButtonCreateWorkout />
       <Workouts />
     </div>
   );

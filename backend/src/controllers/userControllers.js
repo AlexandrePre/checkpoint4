@@ -160,36 +160,6 @@ const userController = {
       .catch((err) => next(err));
     //
   },
-  updateConnected: (req, res, next) => {
-    const connect = true;
-    const { id } = req.params;
-
-    userModel
-      .updateConnected(connect, id)
-      .then((response) => {
-        if (response.affectedRows !== 0) {
-          return res.status(200).send("User connected");
-        }
-
-        return res.status(404).send("error connecting user");
-      })
-      .catch((err) => next(err));
-  },
-  updateDisconnect: (req, res, next) => {
-    const disConnect = false;
-    const { id } = req.params;
-
-    userModel
-      .updateDisconnect(disConnect, id)
-      .then((response) => {
-        if (response.affectedRows === 0) {
-          return res.status(200).send("User disconnect");
-        }
-
-        return res.status(404).send("error connecting user");
-      })
-      .catch((err) => next(err));
-  },
 };
 
 module.exports = userController;
