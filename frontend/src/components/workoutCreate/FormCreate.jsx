@@ -40,8 +40,8 @@ export default function FormCreate() {
 
   return (
     <form className="form" onSubmit={handleSubmitCreateWorkout}>
-      <h2>Créer ta séance</h2>
-      <div id="titre">
+      <h2 id="title">Créer ta séance</h2>
+      <div className="formCreate">
         <input
           type="text"
           value={input.name_workout}
@@ -51,54 +51,56 @@ export default function FormCreate() {
           required="required"
           id="name_workout"
         />
-        <input
-          type="text"
-          value={input.drillOne}
-          placeholder="drillOne"
-          onChange={handleChange}
-          name="drillOne"
-          required="required"
-          id="drillOne"
-        />
-        <input
-          type="text"
-          value={input.drillTwo}
-          placeholder="drillTwo"
-          onChange={handleChange}
-          name="drillTwo"
-          required="required"
-          id="drillTwo"
-        />
-        <input
-          type="text"
-          value={input.drillThree}
-          placeholder="drillThree"
-          onChange={handleChange}
-          name="drillThree"
-          required="required"
-          id="drillThree"
-        />
-        <input
-          type="text"
-          value={input.drillFour}
-          placeholder="drillFour"
-          onChange={handleChange}
-          name="drillFour"
-          required="required"
-          id="drillFour"
-        />
-        <input
-          type="text"
-          value={input.drillFive}
-          placeholder="drillFive"
-          onChange={handleChange}
-          name="drillFive"
-          required="required"
-          id="drillFive"
-        />
+        <div className="bodyworkout">
+          <input
+            type="textarea"
+            value={input.drillOne}
+            placeholder="drillOne"
+            onChange={handleChange}
+            name="drillOne"
+            required="required"
+            className="drill"
+          />
+          <input
+            type="textarea"
+            value={input.drillTwo}
+            placeholder="drillTwo"
+            onChange={handleChange}
+            name="drillTwo"
+            required="required"
+            className="drill"
+          />
+          <input
+            type="textarea"
+            value={input.drillThree}
+            placeholder="drillThree"
+            onChange={handleChange}
+            name="drillThree"
+            required="required"
+            className="drill"
+          />
+          <input
+            type="textarea"
+            value={input.drillFour}
+            placeholder="drillFour"
+            onChange={handleChange}
+            name="drillFour"
+            required="required"
+            className="drill"
+          />
+          <input
+            type="textarea"
+            value={input.drillFive}
+            placeholder="drillFive"
+            onChange={handleChange}
+            name="drillFive"
+            required="required"
+            className="drill"
+          />
+        </div>
       </div>
 
-      <button type="submit" id="btn-inscription" value="Creation">
+      <button type="submit" id="btn-createWorkout" value="Creation">
         CREEZ TA SEANCE
       </button>
     </form>
