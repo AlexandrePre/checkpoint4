@@ -7,7 +7,7 @@ export default function ButtonCreateDecision() {
     <div className="btn-decision">
       <Link to="/decision">
         <button className="btn-decisioncreate" type="button">
-          Créer une décision
+          Créer un WORKOUT
         </button>
       </Link>
     </div>

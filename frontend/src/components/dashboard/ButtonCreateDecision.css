@@ -13,7 +13,8 @@
 
 .btn-decision {
   position: absolute;
-  top: 28vh;
+  top: 8vh;
+  left: -35vw;
   display: flex;
   justify-content: flex-end;
   width: 95%;

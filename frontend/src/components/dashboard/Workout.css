@@ -1,0 +1,14 @@
+.workouts {
+  display: flex;
+  justify-content: center;
+
+  position: absolute;
+  top: 30vh;
+  width: 100vw;
+  height: 80vh;
+}
+
+.workouts h1 {
+  color: white;
+  padding-right: 5vw;
+}
