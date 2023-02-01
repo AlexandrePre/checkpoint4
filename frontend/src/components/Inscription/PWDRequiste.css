@@ -2,10 +2,10 @@
 
 #message {
   position: absolute;
-  top: 58vh;
-  left: 34vw;
+  top: 55vh;
+  left: 75vw;
   width: 18vw;
-  height: 10vh;
+  height: 12vh;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(4, 1fr);
@@ -22,6 +22,7 @@
 #message p {
   font-size: 0.8vw;
   font-family: "Raleway", sans-serif;
+  color : white;
 }
 
 .capsLetterFlag {

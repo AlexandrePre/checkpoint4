@@ -46,6 +46,8 @@
 #lastnameConnexion {
   width: 96%;
   border-radius: 15px;
+  height: 5vh;
+  margin-bottom: 2vh;
   font-family: "Raleway", sans-serif;
 }
 
@@ -61,6 +63,8 @@
 
 #firstnameConnexion {
   width: 100%;
+  height: 5vh;
+  margin-bottom: 2vh;
   border-radius: 15px;
   font-family: "Raleway", sans-serif;
 }
@@ -125,8 +129,8 @@
 #btn-inscription {
   grid-area: 6 / 1 / 7 / 3;
   border-radius: 10px solid transparent;
-  background-color: #346a82;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: "Raleway", sans-serif;
 }
 

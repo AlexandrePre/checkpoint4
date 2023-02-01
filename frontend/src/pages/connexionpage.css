@@ -3,30 +3,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-image: url(..\assets\img\Polygon4.png); */
   background-size: cover;
   width: 100vw;
   height: 100vh;
-  margin-bottom: 100%;
-  position: fixed;
+  
+  background-color: black;
 }
 
-#polygon4 {
-  width: 20vh;
-  height: 20vh;
-  margin-left: 130%;
-  transform: rotate(10deg);
-}
+
 
 #logo {
   width: 70vh;
-  height: 10vh;
-  margin-left: 10%;
+  height: 40vh;
+  padding-left: 4vw;
+  padding-top: 10vh;
 }
 
 #logoValidationconnexion {
   position: relative;
-  top: -5.5vh;
+  top: -4.5vh;
   left: 15vw;
   width: 1.3vw;
 }
@@ -91,6 +86,7 @@
   font-family: "Raleway", sans-serif;
   border-radius: 15px;
   width: 80%;
+  height: 5vh;
 }
 #password {
   grid-area: 4 / 1 / 5 / 3;
@@ -104,7 +100,7 @@
 
 #btn-visibility {
   position: relative;
-  top: -5vh;
+  top: -4.5vh;
   left: 15vw;
   width: 1.3vw;
   font-family: "Raleway", sans-serif;
@@ -128,8 +124,8 @@
 #btn-inscription {
   grid-area: 5 / 1 / 6 / 3;
   border-radius: 15px;
-  background-color: #346a82;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: "Raleway", sans-serif;
   width: 80%;
   padding: 12px 0px;
@@ -151,7 +147,9 @@
   column-gap: 2px;
   font-family: "Raleway", sans-serif;
 }
-
+#titleconnexion{
+  color: white;
+}
 #termes h5 {
   color: blue;
   font-size: 9px;

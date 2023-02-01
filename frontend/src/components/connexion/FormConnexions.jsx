@@ -56,7 +56,7 @@ export default function FormInscription() {
       <img src={logo} alt="logo" id="logo" />
 
       <form className="form-connexion" onSubmit={handleSubmit}>
-        <h2>Connexion à Makesense</h2>
+        <h2 id="titleconnexion">Connexion à Training, Inc</h2>
         <div id="mail">
           <input
             type="text"

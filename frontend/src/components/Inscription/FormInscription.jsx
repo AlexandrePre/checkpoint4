@@ -86,93 +86,87 @@ export default function FormInscription() {
   };
 
   return (
-    <>
-      <form className="form" onSubmit={handleSubmitConnexion}>
-        <h2>Créer un compte gratuit</h2>
-        <div id="lastname">
-          <input
-            type="text"
-            value={input.lastname}
-            placeholder="Lastname"
-            onChange={handleChange}
-            name="lastname"
-            required="required"
-            id="lastnameConnexion"
-          />
-        </div>
-        <div id="firstname">
-          <input
-            type="text"
-            value={input.firstname}
-            placeholder="Firstname"
-            onChange={handleChange}
-            name="firstname"
-            required="required"
-            id="firstnameConnexion"
-          />
-        </div>
-
-        <div id="mail">
-          <input
-            type="email"
-            id="emailConnexion"
-            required="required"
-            placeholder="email"
-            onChange={emailValidation}
-            value={email.email}
-          />
-          <img
-            id="logoValidation"
-            src={logoValide ? good : bad}
-            alt="validation"
-          />
-        </div>
-
-        <div id="password">
-          <input
-            type={passwordVisibility ? "teste" : "password"}
-            placeholder="Password"
-            id="passwordConnexion"
-            value={input.password}
-            name="password"
-            onChange={handleChange}
-            onFocus={handleOnFocus}
-            onBlur={handleOnBlur}
-            onKeyUp={handleOnKeyUp}
-          />
-          <img
-            id="btn-visibility-inscription"
-            onClick={handleVisibility}
-            src={passwordVisibility ? eyesInvisibles : eyes}
-            role="presentation"
-            alt="oeil"
-          />
-        </div>
-
-        {pwdRequiste
-          ? data.map((validation) => (
-              <PWDRequisite
-                id={validation.id}
-                className={validation.className}
-                text={validation.text}
-                imageInvalide={validation.imageInvalide}
-                imageValide={validation.imageValide}
-                capsLetterFlag={checks.capsLetterCheck}
-                numberFlag={checks.numberCheck}
-                pwdLengthFlag={checks.pwdLengthCheck}
-                specialCharFlag={checks.specialCharCheck}
-              />
-            ))
-          : null}
-
-        <button type="submit" id="btn-inscription" value="Creation">
-          S'inscrire à Makesense
-        </button>
-      </form>
-      <div id="termes">
-        <h4>En vous inscrivant, vous accepter les</h4>
-        <h5>Termes et conditions</h5>
+    <form className="form" onSubmit={handleSubmitConnexion}>
+      <h2>Créer un compte gratuit</h2>
+      <div id="lastname">
+        <input
+          type="text"
+          value={input.lastname}
+          placeholder="Lastname"
+          onChange={handleChange}
+          name="lastname"
+          required="required"
+          id="lastnameConnexion"
+        />
       </div>
-    </>
+      <div id="firstname">
+        <input
+          type="text"
+          value={input.firstname}
+          placeholder="Firstname"
+          onChange={handleChange}
+          name="firstname"
+          required="required"
+          id="firstnameConnexion"
+        />
+      </div>
+
+      <div id="mail">
+        <input
+          type="email"
+          id="emailConnexion"
+          required="required"
+          placeholder="email"
+          onChange={emailValidation}
+          value={email.email}
+        />
+        <img
+          id="logoValidation"
+          src={logoValide ? good : bad}
+          alt="validation"
+        />
+      </div>
+
+      <div id="password">
+        <input
+          type={passwordVisibility ? "teste" : "password"}
+          placeholder="Password"
+          id="passwordConnexion"
+          value={input.password}
+          name="password"
+          onChange={handleChange}
+          onFocus={handleOnFocus}
+          onBlur={handleOnBlur}
+          onKeyUp={handleOnKeyUp}
+        />
+        <img
+          id="btn-visibility-inscription"
+          onClick={handleVisibility}
+          src={passwordVisibility ? eyesInvisibles : eyes}
+          role="presentation"
+          alt="oeil"
+        />
+      </div>
+
+      {pwdRequiste
+        ? data.map((validation) => (
+            <PWDRequisite
+              id={validation.id}
+              className={validation.className}
+              text={validation.text}
+              imageInvalide={validation.imageInvalide}
+              imageValide={validation.imageValide}
+              capsLetterFlag={checks.capsLetterCheck}
+              numberFlag={checks.numberCheck}
+              pwdLengthFlag={checks.pwdLengthCheck}
+              specialCharFlag={checks.specialCharCheck}
+            />
+          ))
+        : null}
+
+      <button type="submit" id="btn-inscription" value="Creation">
+        S'inscrire à Training, Inc
+      </button>
+    </form>
   );
 }
