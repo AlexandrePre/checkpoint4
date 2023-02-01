@@ -1,7 +1,6 @@
 .workouts {
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
   position: absolute;
   top: 30vh;
   width: 100vw;
@@ -11,4 +10,5 @@
 .workouts h1 {
   color: white;
   padding-right: 5vw;
+  margin-left: 40vw;
 }
