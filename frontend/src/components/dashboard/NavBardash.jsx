@@ -99,11 +99,4 @@ function NavBar() {
   );
 }
 
-// NavBar.propTypes = {
-//   profileImage: PropTypes.string.isRequired,
-//   socket: PropTypes.func.isRequired,
-//   emit: PropTypes.func.isRequired,
-//   id: PropTypes.func.isRequired,
-// };
-
 export default NavBar;
