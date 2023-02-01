@@ -33,15 +33,15 @@ function NavBar() {
     <nav id="navbar">
       {(toggleMenu || largeur > 500) && (
         <ul className="liste">
-          <img className="logo" src={logo} alt="logo" />
+          <img id="logoHomeNav" src={logo} alt="logo" />
 
-          <li className="item"> SOLUTION</li>
-          <li className="item"> CONTACT</li>
+          <li className="itemtitre"> SOLUTION</li>
+          <li className="itemtitre"> CONTACT</li>
           <Link to="connexion" style={{ textDecoration: "none" }}>
-            <li className="item"> CONNEXION</li>
+            <li className="itemtitre"> CONNEXION</li>
           </Link>
           <Link to="inscription" style={{ textDecoration: "none" }}>
-            <li className="item" id="inscrit">
+            <li className="itemtitre" id="inscrit">
               INSCRIS TOI
             </li>
           </Link>

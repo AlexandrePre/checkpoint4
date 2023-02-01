@@ -1,7 +1,11 @@
+import ButtonCreateDecision from "../components/dashboard/ButtonCreateDecision";
+import NavBarDash from "../components/dashboard/NavBardash";
+
 export default function Dashboard() {
   return (
-    <div className="dashboard">
-      <h1> C'est le début</h1>
+    <div>
+      <NavBarDash />
+      <ButtonCreateDecision />
     </div>
   );
 }

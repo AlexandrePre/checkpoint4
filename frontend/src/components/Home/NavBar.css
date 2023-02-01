@@ -1,7 +1,7 @@
 #inscrit {
-  background-color: black;
+  background-color: white;
   width: 80%;
-  color: white;
+  color: black;
   padding: 0.5em;
   border-radius: 5px;
   display: flex;
@@ -10,16 +10,14 @@
   height: 50%;
 }
 
-.logo {
-  width: 60%;
-  height: 60%;
-  padding-left: 10px;
+
+#logoHomeNav {
+  width: 8vw;
 }
 
 .liste {
   list-style-type: none;
-  background-color: white;
-  height: 100%;
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 4fr repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -31,9 +29,9 @@
   padding: 0;
 }
 
-.item {
+.itemtitre {
   margin-right: 10px;
-  color: black;
+  color: white;
   cursor: pointer;
   font-weight: bold;
 }
