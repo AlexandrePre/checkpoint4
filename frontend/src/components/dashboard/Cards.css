@@ -41,25 +41,21 @@
 
 @media screen and (max-width: 500px) {
   .CardItem {
-  
     width: 40vw;
+  }
 
+  #titleWorkout {
+    width: 15vw;
+    margin-left: 10vw;
+    color: black;
+  }
 
-}
+  .btn-delete {
+    width: 10vw;
+  }
 
-#titleWorkout {
-  width: 15vw;
-  margin-left: 10vw;
-  color: black;
-}
-
-
-.btn-delete {
-  width: 10vw;
-}
-
-#delete {
-  width: 6vw;
-  margin-top: 2.2vh;
-}
+  #delete {
+    width: 6vw;
+    margin-top: 2.2vh;
+  }
 }

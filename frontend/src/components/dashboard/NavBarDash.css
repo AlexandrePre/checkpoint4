@@ -49,7 +49,6 @@
   z-index: 10;
 }
 
-
 .pictureProfil {
   grid-area: 1 / 5 / 2 / 6;
   height: 5vmin;
@@ -166,7 +165,6 @@ h4 {
 }
 
 #messageLogo {
-  
   width: 3vw;
 }
 
@@ -261,21 +259,13 @@ h4 {
     left: 35vw;
   }
 
-  
-.pictureProfil {
+  .pictureProfil {
+    margin-bottom: 4vh;
+  }
 
-  margin-bottom: 4vh;
- 
-}
-
-
-.dropdown-menu {
-
-  top: 10vh;
-  left: 75vw;
-  width: 20vw;
-  
-}
-
-
+  .dropdown-menu {
+    top: 10vh;
+    left: 75vw;
+    width: 20vw;
+  }
 }

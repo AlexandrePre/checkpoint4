@@ -14,6 +14,7 @@ export default function FormCreate() {
     drillThree: "",
     drillFour: "",
     drillFive: "",
+    drillSix: "",
   });
 
   const user_id = auth.data.id;
@@ -53,56 +54,67 @@ export default function FormCreate() {
         />
         <div className="bodyworkout">
           <input
-            type="textarea"
+            type="text"
             value={input.drillOne}
             placeholder="drillOne"
             onChange={handleChange}
             name="drillOne"
             required="required"
-            className="drill"
+            className="drillInput"
           />
           <input
-            type="textarea"
+            type="text"
             value={input.drillTwo}
             placeholder="drillTwo"
             onChange={handleChange}
             name="drillTwo"
             required="required"
-            className="drill"
+            className="drillInput"
           />
           <input
-            type="textarea"
+            type="text"
             value={input.drillThree}
             placeholder="drillThree"
             onChange={handleChange}
             name="drillThree"
             required="required"
-            className="drill"
+            className="drillInput"
           />
           <input
-            type="textarea"
+            type="text"
             value={input.drillFour}
             placeholder="drillFour"
             onChange={handleChange}
             name="drillFour"
             required="required"
-            className="drill"
+            className="drillInput"
           />
           <input
-            type="textarea"
+            type="text"
             value={input.drillFive}
             placeholder="drillFive"
             onChange={handleChange}
             name="drillFive"
             required="required"
-            className="drill"
+            className="drillInput"
+          />
+
+          <input
+            type="text"
+            value={input.drillSix}
+            placeholder="drillSix"
+            onChange={handleChange}
+            name="drillSix"
+            required="required"
+            className="drillInput"
           />
         </div>
       </div>
-
-      <button type="submit" id="btn-createWorkout" value="Creation">
-        CREEZ TA SEANCE
-      </button>
+      <div className="btn-create">
+        <button type="submit" id="btn-createWorkout" value="Creation">
+          CREEZ TA SEANCE
+        </button>
+      </div>
     </form>
   );
 }

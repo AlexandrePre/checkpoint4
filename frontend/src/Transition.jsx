@@ -8,6 +8,7 @@ import Connexionpage from "./pages/Connexionpage";
 import Dashboard from "./pages/dashboard";
 import WorkoutCreate from "./pages/WorkoutCreate";
 import DetailWorkout from "./pages/DetailWorkout";
+import ProtectedRoute from "./hooks/ProtectedRoute";
 
 function Transition() {
   return (
@@ -17,11 +18,29 @@ function Transition() {
         <Route path="*" element={<Error />} />
         <Route path="/inscription" element={<Inscription />} />
         <Route path="/connexion" element={<Connexionpage />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/workoutcreate" element={<WorkoutCreate />} />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/workoutcreate"
+          element={
+            <ProtectedRoute>
+              <WorkoutCreate />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/dashboard/detailworkout/:id"
-          element={<DetailWorkout />}
+          element={
+            <ProtectedRoute>
+              <DetailWorkout />
+            </ProtectedRoute>
+          }
         />
       </Routes>
     </div>
