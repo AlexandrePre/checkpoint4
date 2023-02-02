@@ -1,0 +1,90 @@
+#title {
+  color: white;
+  font-size: 5vw;
+}
+
+#btn-createWorkout {
+  margin: 12px;
+  height: 50px;
+  width: 30vw;
+  border-radius: 10px;
+  background: #333;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+    inset -5px -5px 10px #222;
+  font-family: "Damion", cursive;
+  border: none;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+}
+
+#btn-createWorkout:hover {
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
+.form {
+  position: absolute;
+  top: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.formCreate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5vh;
+}
+
+#name_workout {
+  width: 25vw;
+  height: 5vh;
+  border: 3px solid rgb(127, 170, 170);
+  border-radius: 20px;
+  background-image: linear-gradient(120deg, #3c3c3c, #585858);
+  color: rgb(127, 170, 170);
+  cursor: pointer;
+  padding: 7px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  transition: all 1s;
+}
+
+.drillInput {
+  width: 20vw;
+  height: 5vh;
+  border: 3px solid rgb(127, 170, 170);
+  border-radius: 20px;
+  background-image: linear-gradient(120deg, #3c3c3c, #585858);
+  color: rgb(127, 170, 170);
+  cursor: pointer;
+  padding: 7px 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  transition: all 1s;
+}
+
+.drillInput:focus {
+  outline-color: rgb(127, 170, 170);
+}
+
+.bodyworkout {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 5vh;
+  column-gap: 5vw;
+}
+
+.btn-create {
+  margin-top: 8vh;
+}

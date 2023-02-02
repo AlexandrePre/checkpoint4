@@ -10,6 +10,8 @@ import WorkoutCreate from "./pages/WorkoutCreate";
 import DetailWorkout from "./pages/DetailWorkout";
 import ProtectedRoute from "./hooks/ProtectedRoute";
 import ProfilePage from "./pages/ProfilPage";
+import Drills from "./pages/Drills";
+import DrillCreates from "./pages/DrillCreate";
 
 function Transition() {
   return (
@@ -49,6 +51,24 @@ function Transition() {
           element={
             <ProtectedRoute>
               <ProfilePage />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/drill"
+          element={
+            <ProtectedRoute>
+              <Drills />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/drill/drillcreate"
+          element={
+            <ProtectedRoute>
+              <DrillCreates />
             </ProtectedRoute>
           }
         />

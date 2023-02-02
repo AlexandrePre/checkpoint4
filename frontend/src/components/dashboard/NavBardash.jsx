@@ -49,8 +49,10 @@ function NavBar({ handleClickShown }) {
           </div>
 
           <div className="drill">
-            <img id="drill" src={logoDrills} alt="drill" />
-            <h4>Drills</h4>
+            <Link to="/drill">
+              <img id="drill" src={logoDrills} alt="drill" />
+              <h4>Drills</h4>
+            </Link>
           </div>
 
           <div className="workout">

@@ -1,0 +1,17 @@
+.drillcreate {
+  background-color: white;
+}
+
+.btn-drill {
+  position: absolute;
+  top: 20vh;
+  left: 80vw;
+  background-color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .btn-drill {
+    top: 20vh;
+    left: 40vw;
+  }
+}

@@ -1,0 +1,34 @@
+.CardDrill {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+}
+
+.AllDrill {
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 3vw;
+  column-gap: 3vh;
+}
+
+#drillImg {
+  width: 8vw;
+}
+
+@media screen and (max-width: 500px) {
+  .CardDrill {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+  }
+}

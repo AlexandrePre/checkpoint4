@@ -19,7 +19,7 @@
 }
 
 .detailWorkoutItem h4 {
-  margin-left: 16vw;
+  margin-left: 10vw;
 }
 .card {
   width: 40vw;
@@ -58,7 +58,7 @@
 .btn-workoutmodif {
   border: none;
   position: absolute;
-  top: 18vh;
+  top: 20vh;
   left: 70vw;
   color: #fff;
   z-index: 1;
@@ -299,10 +299,21 @@
   .detailWorkoutItem {
     position: absolute;
     top: 25vh;
-    left: 25vw;
+    left: 15vw;
+    width: 60vw;
   }
 
+  .detailWorkoutItem h4 {
+    margin-left: 20vw;
+  }
   #btn-createWorkout-modif {
-    left: 3vw;
+    left: 12vw;
+  }
+
+  .card {
+    width: 60vw;
+  }
+  .card2 {
+    width: 60vw;
   }
 }
