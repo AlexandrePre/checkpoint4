@@ -8,15 +8,7 @@ import "./DetailWorkoutItem.css";
 
 export default function ModifWorkout({ shownVisibility }) {
   const { id } = useParams();
-  const [input, setInput] = useState({
-    name_workout: "",
-    drillOne: "",
-    drillTwo: "",
-    drillThree: "",
-    drillFour: "",
-    drillFive: "",
-    drillSix: "",
-  });
+  const [input, setInput] = useState({});
 
   const navigate = useNavigate();
 
@@ -26,24 +18,14 @@ export default function ModifWorkout({ shownVisibility }) {
 
   const handleSubmitModifWorkout = (e) => {
     e.preventDefault();
-    if (
-      input.name_workout ||
-      input.drillOne ||
-      input.drillTwo ||
-      input.drillThree ||
-      input.drillFour ||
-      input.drillFive ||
-      input.drillSix
-    ) {
-      api
-        .put(`workout/user/${id}`, { ...input }, { withCredentials: true })
-        .then((res) => {
-          if (res.status === 201) {
-            navigate("/dashboard");
-          }
-        })
-        .catch((err) => err.response);
-    }
+    api
+      .put(`workout/user/${id}`, input, { withCredentials: true })
+      .then((res) => {
+        if (res.status === 201) {
+          navigate("/dashboard");
+        }
+      })
+      .catch((err) => err.response);
   };
 
   return (

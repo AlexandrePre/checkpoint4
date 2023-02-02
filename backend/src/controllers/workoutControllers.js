@@ -48,6 +48,7 @@ const workoutController = {
       drillThree,
       drillFour,
       drillFive,
+      drillSix,
       user_id,
     } = req.body;
     workoutModel
@@ -58,6 +59,7 @@ const workoutController = {
         drillThree,
         drillFour,
         drillFive,
+        drillSix,
         user_id,
       })
       .then((result) =>
@@ -69,6 +71,7 @@ const workoutController = {
           drillThree,
           drillFour,
           drillFive,
+          drillSix,
           user_id,
         })
       )
@@ -77,17 +80,5 @@ const workoutController = {
         res.sendStatus(500);
       });
   },
-
-  // updateDecision: async (req, res) => {
-  //   const { id } = req.params;
-  //   const { id_status } = req.body;
-  //   decisionModel
-  //     .updateOne(id_status, id)
-  //     .then((decision) => res.send(decision))
-  //     .catch((err) => {
-  //       console.error(err);
-  //       res.sendStatus(500);
-  //     });
-  // },
 };
 module.exports = workoutController;
