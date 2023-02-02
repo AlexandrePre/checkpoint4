@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import api from "../../services/api";
@@ -10,12 +11,13 @@ import message from "../../assets/img/message.png";
 import { authContext } from "../../hooks/authContext";
 import "./NavBarDash.css";
 
-function NavBar() {
+function NavBar({ handleClickShown }) {
   const { logout, auth } = useContext(authContext);
 
   const [dropMenu, setDropMenu] = useState(true);
   const handleClick = () => {
     setDropMenu(!dropMenu);
+    handleClickShown();
   };
 
   const handleSubmission = () => {
@@ -29,9 +31,11 @@ function NavBar() {
     <div>
       <nav id="navbar">
         <ul className="listeNav">
-          <Link to="/dashboard">
-            <img id="logodash" src={logo} alt="logo" />
-          </Link>
+          <div className="logodash">
+            <Link to="/dashboard">
+              <img id="logodash" src={logo} alt="logo" />
+            </Link>
+          </div>
 
           <div className="drill">
             <img id="drill" src={logoDrills} alt="drill" />
@@ -55,7 +59,7 @@ function NavBar() {
             />
           </div>
 
-          <div className="notification">
+          <div className="message">
             <img
               id="messageLogo"
               src={message}
@@ -96,5 +100,9 @@ function NavBar() {
     </div>
   );
 }
+
+NavBar.propTypes = {
+  handleClickShown: PropTypes.func.isRequired,
+};
 
 export default NavBar;
