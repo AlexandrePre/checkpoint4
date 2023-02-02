@@ -252,8 +252,8 @@ h4 {
   }
 
   #triangle {
-    height: 1vh;
-    width: 1vh;
+    height: 2vh;
+    width: 2vh;
     position: relative;
     top: -3vh;
     left: 35vw;
@@ -268,4 +268,19 @@ h4 {
     left: 75vw;
     width: 20vw;
   }
+
+  #messageLogo {
+    width: 6vw;
+  }
+
+  #workoutlogo {
+    width: 6vw;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+  }
+
+  #drill {
+    width: 6vw;
+  }
+
 }
