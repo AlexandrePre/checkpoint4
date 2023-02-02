@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import api from "../../services/api";
 
@@ -15,10 +15,21 @@ function NavBar({ handleClickShown }) {
   const { logout, auth } = useContext(authContext);
 
   const [dropMenu, setDropMenu] = useState(true);
+  const [profilImage, setProfilImage] = useState();
   const handleClick = () => {
     setDropMenu(!dropMenu);
     handleClickShown();
   };
+
+  const loadUserInfo = () => {
+    api.get(`user/${auth.data.id}`).then((response) => {
+      setProfilImage(response.data.image);
+    });
+  };
+
+  useEffect(() => {
+    loadUserInfo();
+  }, [profilImage]);
 
   const handleSubmission = () => {
     api
@@ -69,9 +80,7 @@ function NavBar({ handleClickShown }) {
             <h4>messages</h4>
           </div>
           <div className="pictureProfil">
-            {/* {profilImage && (
-              <img src={profileImage || profilImage} alt="" id="imgProfil" />
-            )} */}
+            {profilImage && <img src={profilImage} alt="" id="imgProfil" />}
           </div>
         </ul>
 

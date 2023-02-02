@@ -9,6 +9,7 @@ import Dashboard from "./pages/dashboard";
 import WorkoutCreate from "./pages/WorkoutCreate";
 import DetailWorkout from "./pages/DetailWorkout";
 import ProtectedRoute from "./hooks/ProtectedRoute";
+import ProfilePage from "./pages/ProfilPage";
 
 function Transition() {
   return (
@@ -39,6 +40,15 @@ function Transition() {
           element={
             <ProtectedRoute>
               <DetailWorkout />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/dashboard/profil"
+          element={
+            <ProtectedRoute>
+              <ProfilePage />
             </ProtectedRoute>
           }
         />

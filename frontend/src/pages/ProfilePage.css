@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:wght@500&display=swap");
+
+.decisionContainer {
+  display: flex;
+  flex-direction: column;
+}
+.myDecisions {
+  display: flex;
+  flex-direction: row;
+}
+.userDecisions {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3vmin;
+  padding-bottom: 10vmin;
+  padding-top: 10vmin;
+  gap: 13vmin;
+}
+
+.navButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 14vmin;
+}
+.profilInfo {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-top: 8vh;
+}
+.profilPic {
+  position: absolute;
+  top: 30vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 30vmin;
+  padding-left: 7vmin;
+}
+.profilText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 13vmin;
+}
+.nameEmail {
+  display: flex;
+  flex-direction: row;
+  gap: 12vmin;
+}
+.nameEmailMod {
+  display: flex;
+  flex-direction: row;
+  gap: 7vmin;
+}
+
+#buttonProfil {
+  position: absolute;
+  top: 60vh;
+  left: 55vw;
+  margin-left: auto;
+  margin-right: 4;
+  width: 22vmin;
+
+  height: 5vmin;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  background-color: red;
+  color: white;
+  border-radius: 1vmin;
+}
+.picture {
+  height: 35vmin;
+  width: 35vmin;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  background: url("../../assets/img/profil.png");
+  background-size: cover;
+}
+.picture:before {
+  content: "";
+  position: absolute;
+  width: 35vmin;
+  height: 35vmin;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0);
+}
+.picture:hover::before {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.picture img {
+  display: block;
+}
+.decisionPhase {
+  width: 162.83px;
+  height: 20.38px;
+  margin: auto;
+  margin-top: 2vh;
+  background: rgba(178, 224, 177, 0.28);
+  border: 1px solid #3c9625;
+  border-radius: 7px;
+}
+.picutre button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.picture:hover button {
+  opacity: 1;
+}
+.buttonImage {
+  width: 22vmin;
+  text-align: center;
+  margin-left: 5vmin;
+  height: 4.5vmin;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background-color: #e9f1f1;
+  color: black;
+  border-radius: 1vmin;
+}
+#inputPos {
+  width: 20vw;
+  margin-top: 3vh;
+}
+#inputFirst {
+  width: 10vw;
+  height: 3vh;
+}
+#inputLast {
+  width: 10vw;
+  height: 3vh;
+}
+#inputMail {
+  height: 5vh;
+  width: 13vw;
+}
+
+#profileImage {
+  height: 35vmin;
+  width: 35vmin;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+#buttonImage {
+  font-family: "Raleway", sans-serif;
+  background-color: white;
+  color: black;
+  border-radius: 1vmin;
+}
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+#importBtn {
+  padding-top: 1vh;
+}
+#profilImg {
+  margin-bottom: 2vmin;
+}
+#line {
+  margin: auto;
+}
+.firstNameProfil {
+  display: flex;
+  gap: 5vmin;
+}
+.lastNameProfil {
+  display: flex;
+  gap: 5vmin;
+}
+.emailProfil {
+  display: flex;
+  gap: 5vmin;
+}
+#info,
+#infoLast,
+#infoFirst,
+#infoMail {
+  margin: auto;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+}
+
+.personalInfo {
+  position: absolute;
+  left: 28vw;
+  top: 45vh;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  height: 10vh;
+  box-shadow: 1px 5px 8px rgb(0 0 0 / 15%);
+  border-radius: 30px;
+}
+#positionTitle {
+  padding: 1vh;
+}
+
+@media screen and (max-width: 500px) {
+  .profilPic {
+    top: 20vh;
+    left: 25vw;
+  }
+
+  .buttonImage h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 3vw;
+    padding-top: 0vh;
+  }
+
+  .buttonImage {
+    margin-left: 8vw;
+    width: 20vw;
+    height: 4vh;
+  }
+
+  #importBtn {
+    padding-top: 0vh;
+  }
+
+  .personalInfo {
+    position: absolute;
+    left: 5vw;
+    height: 40vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nameEmailMod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nameEmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #buttonProfil {
+    position: absolute;
+    top: 87vh;
+    left: 40vw;
+    height: 8vh;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    background-color: red;
+    color: white;
+    border-radius: 1vmin;
+  }
+
+  #inputFirst {
+    width: 50vw;
+    height: 3vh;
+  }
+  #inputLast {
+    width: 50vw;
+    height: 3vh;
+  }
+  #inputMail {
+    height: 3vh;
+    width: 50vw;
+  }
+}
