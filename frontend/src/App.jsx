@@ -7,6 +7,12 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
+      <span />
       <Router>
         <AuthProvider>
           <Transition />
