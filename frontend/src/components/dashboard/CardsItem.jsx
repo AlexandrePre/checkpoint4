@@ -13,10 +13,8 @@ function CardsItem({ nbdec, name_workout }) {
   return (
     <div className="CardItem">
       <Link id="workoutTitle" to={`/dashboard/detailworkout/${nbdec}`}>
-        <div style={{ textDecoration: "none" }}>
-          <h4 id="titleWorkout" style={{ textDecoration: "none" }}>
-            {name_workout}
-          </h4>
+        <div>
+          <h4 id="titleWorkout">{name_workout}</h4>
         </div>
       </Link>
       <div className="btn-delete">

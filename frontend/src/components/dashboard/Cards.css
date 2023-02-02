@@ -1,7 +1,6 @@
 .AllWorkout {
   display: flex;
   margin-top: 10vh;
-  margin-left: 4vw;
   width: 90vw;
   flex-direction: row;
   row-gap: 4vh;
@@ -9,14 +8,13 @@
   flex-wrap: wrap;
 }
 
-#titleWorkout h4 {
-  text-decoration: none;
+#titleWorkout {
   width: 15vw;
   margin-left: 2vw;
+  color: black;
 }
 
 #workoutTitle {
-  text-decoration: none;
   width: 15vw;
   display: flex;
   justify-content: center;
@@ -39,4 +37,29 @@
 #delete {
   width: 3vw;
   margin-top: 1vh;
+}
+
+@media screen and (max-width: 500px) {
+  .CardItem {
+  
+    width: 40vw;
+
+
+}
+
+#titleWorkout {
+  width: 15vw;
+  margin-left: 10vw;
+  color: black;
+}
+
+
+.btn-delete {
+  width: 10vw;
+}
+
+#delete {
+  width: 6vw;
+  margin-top: 2.2vh;
+}
 }

@@ -257,7 +257,25 @@ h4 {
     height: 1vh;
     width: 1vh;
     position: relative;
-    top: -2vh;
-    left: 30vw;
+    top: -3vh;
+    left: 35vw;
   }
+
+  
+.pictureProfil {
+
+  margin-bottom: 4vh;
+ 
+}
+
+
+.dropdown-menu {
+
+  top: 10vh;
+  left: 75vw;
+  width: 20vw;
+  
+}
+
+
 }
