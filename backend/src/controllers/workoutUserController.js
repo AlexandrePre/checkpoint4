@@ -12,7 +12,7 @@ const workoutUserController = {
   updateWorkout: async (req, res) => {
     const { id } = req.params;
     WorkoutUserModel.updateOne(req.body, id)
-      .then((user) => res.send(user))
+      .then((user) => res.status(201).send(user))
       .catch((err) => {
         console.error(err);
         res.sendStatus(500);

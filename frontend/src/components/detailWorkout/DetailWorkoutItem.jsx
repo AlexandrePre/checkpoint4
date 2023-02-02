@@ -1,15 +1,13 @@
 /* eslint-disable camelcase */
 import PropTypes from "prop-types";
 import "./DetailWorkoutItem.css";
-// import api from "../../services/api";
 
-function detailWorkoutItem({ info }) {
-  //   const deleteWorkout = () => {
-  //     api.delete(`workout/${nbdec}`, { withCredentials: true });
-  //   };
-
+function detailWorkoutItem({ info, shownVisibility }) {
   return (
-    <div className="detailWorkoutItem">
+    <div
+      className="detailWorkoutItem"
+      style={{ display: shownVisibility ? "block" : "none" }}
+    >
       <h4> {info[0].name_workout}</h4>
       <div className="card">
         <div className="card2">exercice 1 {info[0].drillOne}</div>
@@ -35,6 +33,7 @@ function detailWorkoutItem({ info }) {
 
 detailWorkoutItem.propTypes = {
   info: PropTypes.string.isRequired,
+  shownVisibility: PropTypes.string.isRequired,
 };
 
 export default detailWorkoutItem;
